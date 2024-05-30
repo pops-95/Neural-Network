@@ -21,6 +21,7 @@ public:
     void show_weights();
     void output_calcu(std::vector<int> input_values);
     void show_outputs();
+    std::vector<int> get_output();
 };
 
 hidden_layer::hidden_layer(int nodes,std::string activation)
@@ -84,4 +85,7 @@ inline void hidden_layer::show_outputs()
     }
 }
 
-
+inline std::vector<int> hidden_layer::get_output()
+{
+    return output_values;
+}
