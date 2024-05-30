@@ -83,3 +83,5 @@ inline void hidden_layer::show_outputs()
         std::cout<<i<<"\n";
     }
 }
+
+
